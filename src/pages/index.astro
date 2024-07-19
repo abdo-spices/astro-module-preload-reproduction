@@ -12,8 +12,11 @@
 	</head>
 	<body>
 		<h1>Astro</h1>
+		<button id="btn">click</button>
 		<script>
-			console.log("Hello World!");
+			window.btn.addEventListener("click", () => {
+				import("../script")
+			})
 		</script>
 	</body>
 </html>
