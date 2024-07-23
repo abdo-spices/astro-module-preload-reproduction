@@ -10,8 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.12.1",
     "@astrojs/check": "^0.8.2",
-    "typescript": "^5.5.3"
+    "astro": "^4.12.1",
+    "rollup": "^4.19.0",
+    "typescript": "^5.5.3",
+    "unbuild": "^2.0.0",
+    "vite": "^5.3.4",
+    "vite-plugin-inspect": "^0.8.5"
   }
 }

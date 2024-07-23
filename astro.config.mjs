@@ -1,12 +1,16 @@
 import { defineConfig } from 'astro/config';
+import transformImportPlugin from './vite-plugin';
+import Inspect from 'vite-plugin-inspect'
 
 // https://astro.build/config
 export default defineConfig({
   vite: {
-    build: {
-      modulePreload: {
-        polyfill: false
-      }
-    }
+    plugins: [
+      Inspect(),
+      transformImportPlugin()
+    ]
   },
+  devToolbar: {
+    enabled: false
+  }
 });
